@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <title>Control of traffic signals</title>
+    <link rel="stylesheet" href="traf.css">
+</head>
+
+<body>
+    <div>
+        
+    </div>
+    <div style="background-color: black; height: 100vh;padding-left: 550px;padding-top: 150px;">
+        <h1 class="m-3"style="color: white;">Traffic Light</h1>
+        <div class="d-flex flex-row ">
+            <div class="d-flex flex-column justify-content-center mt-3">
+                <button class="but3 btn btn-primary" onclick="set()">Start</button>
+                <button class="but3 btn btn-primary mt-2" onclick="reset()">Reset</button>
+                <div class="m-3">
+                    <p style="color: white;" id="textCon">Follow the Rules</p>
+                </div>
+            </div>
+            <div class="con-1">
+                <div class="sg-1" id="stopLight"></div>
+                <div class="sg-1" id="readyLight"></div>
+                <div class="sg-1" id="goLight"></div>
+                <div class="sg-2 text-center pt-1" style="color: red; font-weight: bold;"><p id="timer">20</p></div>
+            </div>
+        </div>
+        
+    </div>
+    
+    <script src="traf.js"></script>
+</body>
+
+</html>
